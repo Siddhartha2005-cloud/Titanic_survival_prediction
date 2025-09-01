@@ -1,0 +1,48 @@
+# 🚢 Titanic Survival Prediction
+
+This project analyzes the famous **Titanic Dataset** to predict passenger survival using **Logistic Regression**.  
+It demonstrates **data cleaning, exploratory data analysis (EDA), feature engineering, and model building**.
+
+## 🔍 Exploratory Data Analysis (EDA)
+
+- Checked for missing values.  
+- Visualized survival rates by **sex, age, passenger class**.  
+- Key insights:  
+  - 👩 **Females** had a much higher survival rate than males.  
+  - 👶 **Children** survived at higher rates than adults.  
+  - 💼 **First-class passengers** had the highest survival rate, while third-class had the lowest.  
+
+## 🛠️ Data Preprocessing
+
+- Dropped irrelevant columns (`PassengerId`, `Name`, `Ticket`, `Cabin`).  
+- Encoded categorical variables:  
+  - `Sex` → male = 1, female = 0.  
+   - Scaled numerical features (`Age`) using **MinMaxScaler**.  
+- Saved cleaned dataset as `impove_dataset.csv`.  
+
+## 🤖 Model Building
+
+- Used **Logistic Regression** as the ML model.  
+- Split data into training & validation sets.  
+- Evaluated performance using **accuracy score**.
+
+## 📊 Model Evaluation
+
+- Baseline accuracy achieved: **~77–80%**  
+
+## 📌 Conclusion
+
+This is **my first Machine Learning project**, where I worked on the Titanic dataset to:  
+1. Clean and prepare raw data.  
+2. Perform exploratory data analysis (EDA) to extract insights.  
+3. Build and evaluate a Logistic Regression model.  
+
+Key finding: **Survival strongly depended on gender, age, and passenger class.**   
+
+## ⚙️ Tech Stack
+
+- Python 🐍  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+
